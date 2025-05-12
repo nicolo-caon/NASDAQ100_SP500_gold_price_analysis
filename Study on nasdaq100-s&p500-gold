@@ -85,7 +85,7 @@ for (i in 2:ncol(SP_G_NQ_data)) {
   two_days_returns[[colnames(SP_G_NQ_data)[i]]] <- head(two_days_returns_values, n = nrow(two_days_returns))
 }
 
-# Drop rows with NA values (from the first 11 rows that don't have enough data for the rolling window)
+# Drop rows with NA values 
 two_days_returns <- na.omit(two_days_returns)
 head(two_days_returns)
 
